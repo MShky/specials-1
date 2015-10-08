@@ -1,0 +1,274 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*{
+	box-sizing:border-box;
+}
+
+body{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+#popular{
+	width: 70%; height: 100%;
+}
+img{
+	height: 80px;
+	width: auto;
+}
+main{
+	width:100%;
+	height: auto;
+	position: relative;
+}
+#max, #grow, #ramp, #pay{
+	width: 24%;
+	height:600px;
+	position: absolute;
+	border: 1px solid #333;
+}
+#max{
+	margin-left: 2%;
+}
+#grow{
+	margin-left: 26%;
+}
+#ramp{
+	margin-left:50%;
+}
+#pay{
+	margin-left:74%;
+}
+
+h1{
+	color:#fff;
+	background:red;
+	margin-top: 0;
+	border-radius:10px 10px 0 0;
+	font-size: 3em;
+}
+h2{
+	font-weight:normal;
+	margin-bottom: 0;
+	font-size: 2em;
+}
+h3{
+	text-transform: uppercase;
+	font-weight:normal;
+	font-size: .8em;
+	margin: 0 0 1.5em 0;
+	font-size: 1.5em;
+}
+h4, p{
+	margin-bottom: 0;
+	font-size: 1.3em;
+}
+h5 a{
+	padding:12px 100px;
+	color: white;
+	font-size: 1.5em;
+	border-radius: 10px;
+	text-decoration: none;
+}
+#max h1, #max h5 a{
+	background: red;
+}
+#grow h1, #grow h5 a{
+	background: green;
+}
+#ramp h1, #ramp h5 a{
+	background: blue;
+}
+#pay h1, #pay h5 a{
+	background: grey;
+}
+.old{
+	margin-top:70px;
+	text-decoration: line-through;
+	margin-bottom:0;
+}
+p{
+	margin-top:0;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
